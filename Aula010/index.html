@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JAVASCRIPT - EVENTOS</title>
+    <title>JAVASCRIPT - EVENTOS</title>    
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+    <h1>Aprendendo JavaScript</h1>
+    <h2>Eventos Javascript</h2>
+    <p id="texto"></p>
+    <div><button onclick="eventoClick()">Um Clique</button></div>
+    <div><button ondblclick="eventoDblClick()">Dois Cliques</button></div>
     
+    <div id=teste         
+        onmousemove="adicionaTexto()"  
+        style="margin: auto auto; width:10%; height:100px; background:rgb(255, 136, 0)">
+        Ao mover o mouse aqui, adiciona um texto.
+    </div>
+
+    <div id="teste2" 
+        onmouseover="viraVermelho()" 
+        onmouseout="viraAzul()" 
+        style="margin: auto auto; width:10%; height:100px; background:blue">
+        Ao passar o mouse a cor é vermelha, ao retirar o mouse, a cor é azul
+    </div>
+
+    <div><button onmousedown="cliqueNoBotao()">Clique no botão</button></div>
+    <div><button onmouseup="cliqueNoBotaoESolte()">Clique, segure e solte o botão</button></div>
+
+    <script src="ex001.js"></script>
 </body>
 </html>
