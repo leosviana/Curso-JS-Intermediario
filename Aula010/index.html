@@ -32,8 +32,15 @@
 
     <div><button onmousedown="cliqueNoBotao()">Clique no botão</button></div><br>
     <div><button onmouseup="cliqueNoBotaoESolte()">Clique, segure e solte o botão</button></div><br>
-    <input id="campoTexto" style="font-size:18px;" type="text" placeholder="Digite alguma coisa" value="Texto 1" onfocus="campoFocado()"><br>
-    <input id="campoTexto2" style="font-size:18px;" type="text" placeholder="Digite alguma coisa" value="Texto 2. Veja o console" onfocus="mudou()">
+    <input id="campoTexto" style="font-size:18px;" type="text" placeholder="Digite alguma coisa" value="Texto 1" onfocus="campoFocado()"><br><br>
+
+    <label>Opção: </label>
+    <select id="itens" onchange="mudou()">
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+        <option value="4">Valor 4</option>
+    </select>
 
     <script src="ex001.js"></script>
 </body>

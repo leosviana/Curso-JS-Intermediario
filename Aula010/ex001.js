@@ -64,5 +64,6 @@ function campoFocado(){ //onfocus -> Disparado quando o elemento recebe o foco. 
 }
 
 function mudou(){ //onchange -> Disparado quando existe uma mudança no conteudo. "Ao mudar". Funciona com outros elementos.
-    console.log("Mudou");
+    console.log("Mudou para opção: " + document.getElementById("itens").value);
+
 }
