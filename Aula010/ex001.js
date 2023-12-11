@@ -58,3 +58,11 @@ function cliqueNoBotao(){ //onmousedown -> Disparado quando o clique no botão f
 function cliqueNoBotaoESolte(){ //onmouseup -> Disparado quando o clique no botão é liberado. Somente dentro do botão.
     alert("Você clicou no botão, segurou e soltou o clique");
 }
+
+function campoFocado(){ //onfocus -> Disparado quando o elemento recebe o foco. Válido para input
+    document.getElementById("campoTexto").value = ""; //Ao clica no campo, ele será limpado
+}
+
+function mudou(){ //onchange -> Disparado quando existe uma mudança no conteudo. "Ao mudar". Funciona com outros elementos.
+    console.log("Mudou");
+}

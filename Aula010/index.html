@@ -14,24 +14,26 @@
     <h1>Aprendendo JavaScript</h1>
     <h2>Eventos Javascript</h2>
     <p id="texto"></p>
-    <div><button onclick="eventoClick()">Um Clique</button></div>
-    <div><button ondblclick="eventoDblClick()">Dois Cliques</button></div>
+    <div><button onclick="eventoClick()">Um Clique</button></div><br>
+    <div><button ondblclick="eventoDblClick()">Dois Cliques</button></div><br>
     
     <div id=teste         
         onmousemove="adicionaTexto()"  
         style="margin: auto auto; width:10%; height:100px; background:rgb(255, 136, 0)">
         Ao mover o mouse aqui, adiciona um texto.
-    </div>
+    </div><br>
 
     <div id="teste2" 
         onmouseover="viraVermelho()" 
         onmouseout="viraAzul()" 
         style="margin: auto auto; width:10%; height:100px; background:blue">
         Ao passar o mouse a cor é vermelha, ao retirar o mouse, a cor é azul
-    </div>
+    </div><br>
 
-    <div><button onmousedown="cliqueNoBotao()">Clique no botão</button></div>
-    <div><button onmouseup="cliqueNoBotaoESolte()">Clique, segure e solte o botão</button></div>
+    <div><button onmousedown="cliqueNoBotao()">Clique no botão</button></div><br>
+    <div><button onmouseup="cliqueNoBotaoESolte()">Clique, segure e solte o botão</button></div><br>
+    <input id="campoTexto" style="font-size:18px;" type="text" placeholder="Digite alguma coisa" value="Texto 1" onfocus="campoFocado()"><br>
+    <input id="campoTexto2" style="font-size:18px;" type="text" placeholder="Digite alguma coisa" value="Texto 2. Veja o console" onfocus="mudou()">
 
     <script src="ex001.js"></script>
 </body>
