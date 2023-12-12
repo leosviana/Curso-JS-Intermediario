@@ -12,12 +12,12 @@ Existem muitos eventos. Vejam os mais utilizados:
     onmouseout -> Disparado quando o mouse está para fora do elemento.
     onmousemove -> Disparado quando o mouse é movido no elemento.
     onmousedown -> Disparado quando o clique no botão foi pressionado.
-    onmouseup -> Disparado quando o clique no botão é liberado
+    onmouseup -> Disparado quando o clique no botão é liberado.
 
 #INPUT:
-onfocus -> Disparado quando o elemento recebe o foco. Válido para input
-onchange -> Disparado quando existe uma mudança no conteudo. "Ao mudar".
+onfocus -> Disparado quando o elemento recebe o foco. Válido para input.
 onblur -> Disparado quando o elemento perde o foco.
+onchange -> Disparado quando existe uma mudança no conteudo. "Ao mudar".
 
 #TECLAS PRESSIONADAS:
 onkeydown -> Disparado quando um tecla é pressionada.
@@ -26,7 +26,7 @@ onkeyup -> Disparado quando uma tecla é solta sobre um elemento.
 
 
 onload -> Disparado quando uma página terminou de ser carregada. Body.
-onresize -> Disparado quando há um redirecionamento da janela
+onresize -> Disparado quando há um redirecionamento da janela.
 */
 
 function eventoClick(){ //onclick -> Disparado quando recebe um clique. 
@@ -66,10 +66,20 @@ function campoFocado(){ //onfocus -> Disparado quando o elemento recebe o foco. 
     console.log("Campo focado");
 }
 
+function campoDesfocado(){ //onblur -> Disparado quando o elemento perde o foco.
+    console.log("Campo desfocado");
+}
+
 function mudou(){ //onchange -> Disparado quando existe uma mudança no conteudo. "Ao mudar". Funciona com outros elementos.
     console.log("Mudou para opção: " + document.getElementById("itens").value);
 }
 
-function campoDesfocado(){ //onblur -> Disparado quando o elemento perde o foco.
-    console.log("Campo desfocado");
+function teclaPressionada(){ //onkeydown -> Disparado quando um tecla é pressionada.
+    let input = document.getElementById("campoTexto3").value;
+    console.log(input);
+}
+
+function teclaPressionadaESolta(){ //onkeypress -> Disparado quando um tecla é pressionada e solta.
+    let input2 = document.getElementById("campoTexto4").value;
+    console.log(input2);
 }

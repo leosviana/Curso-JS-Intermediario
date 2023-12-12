@@ -33,7 +33,8 @@
     <div><button onmousedown="cliqueNoBotao()">Clique no botão</button></div><br>
     <div><button onmouseup="cliqueNoBotaoESolte()">Clique, segure e solte o botão</button></div><br>
     <input id="campoTexto" style="font-size:18px;" type="text" placeholder="Digite alguma coisa" value="Texto 1" onfocus="campoFocado()"><br><br>
-    
+    <input id="campoTexto2" style="font-size:18px;" type="text" placeholder="Digite alguma coisa" value="Desfocar" onblur="campoDesfocado()"><br>
+        
     <label>Opção: </label>
     <select id="itens" onchange="mudou()">
         <option value="1">Valor 1</option>
@@ -42,7 +43,8 @@
         <option value="4">Valor 4</option>
     </select><br>
 
-    <input id="campoTexto2" style="font-size:18px;" type="text" placeholder="Digite alguma coisa" value="Desfocar" onblur="campoDesfocado()"><br>
+    <input id="campoTexto3" style="font-size:18px;" type="text" placeholder="Digite alguma coisa" value="Tecla pressionada" onkeydown="teclaPressionada()"><br>
+    <input id="campoTexto4" style="font-size:18px;" type="text" placeholder="Digite alguma coisa" value="Tecla pressionada e solta" onkeypress="teclaPressionadaESolta()"><br>
 
     <script src="ex001.js"></script>
 </body>
