@@ -19,10 +19,12 @@ onfocus -> Disparado quando o elemento recebe o foco. Válido para input
 onchange -> Disparado quando existe uma mudança no conteudo. "Ao mudar".
 onblur -> Disparado quando o elemento perde o foco.
 
-
+#TECLAS PRESSIONADAS:
 onkeydown -> Disparado quando um tecla é pressionada.
 onkeypress -> Disparado quando um tecla é pressionada e solta.
 onkeyup -> Disparado quando uma tecla é solta sobre um elemento.
+
+
 onload -> Disparado quando uma página terminou de ser carregada. Body.
 onresize -> Disparado quando há um redirecionamento da janela
 */
@@ -61,9 +63,13 @@ function cliqueNoBotaoESolte(){ //onmouseup -> Disparado quando o clique no bot�
 
 function campoFocado(){ //onfocus -> Disparado quando o elemento recebe o foco. Válido para input
     document.getElementById("campoTexto").value = ""; //Ao clica no campo, ele será limpado
+    console.log("Campo focado");
 }
 
 function mudou(){ //onchange -> Disparado quando existe uma mudança no conteudo. "Ao mudar". Funciona com outros elementos.
     console.log("Mudou para opção: " + document.getElementById("itens").value);
+}
 
+function campoDesfocado(){ //onblur -> Disparado quando o elemento perde o foco.
+    console.log("Campo desfocado");
 }
