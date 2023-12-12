@@ -21,7 +21,7 @@ onchange -> Disparado quando existe uma mudança no conteudo. "Ao mudar".
 
 #TECLAS PRESSIONADAS:
 onkeydown -> Disparado quando um tecla é pressionada.
-onkeypress -> Disparado quando um tecla é pressionada e solta.
+onkeypress -> Disparado quando um tecla é pressionada e solta rapidamente.
 onkeyup -> Disparado quando uma tecla é solta sobre um elemento.
 
 
@@ -75,11 +75,16 @@ function mudou(){ //onchange -> Disparado quando existe uma mudança no conteudo
 }
 
 function teclaPressionada(){ //onkeydown -> Disparado quando um tecla é pressionada.
-    let input = document.getElementById("campoTexto3").value;
-    console.log(input);
+    let input3 = document.getElementById("campoTexto3").value;
+    console.log(input3);
 }
 
-function teclaPressionadaESolta(){ //onkeypress -> Disparado quando um tecla é pressionada e solta.
-    let input2 = document.getElementById("campoTexto4").value;
-    console.log(input2);
+function teclaPressionadaRapidamente(){ //onkeypress -> Disparado quando um tecla é pressionada e solta rapidamente.
+    let input4 = document.getElementById("campoTexto4").value;
+    console.log(input4);
+}
+
+function teclaPressionadaESolta(){ //onkeyup -> Disparado quando uma tecla é solta sobre um elemento.
+    let input5 = document.getElementById("campoTexto5").value;
+    console.log(input5);
 }
