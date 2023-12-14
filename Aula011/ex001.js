@@ -29,17 +29,19 @@ const lista3 = []; //3º FORMA
 const lista4 = new Array("arroz", "feijão", "macarrão", "leite"); //4º FORMA
     lista4[3] = "café"; //Alterando valor da matrix na posição 3
 
-console.log(lista1, lista2 , lista3, lista4);
+console.log(lista1, lista2 , lista3, lista4); //Exibindo o resultado
 
 //DIFERENÇA DE ARRAY PARA OBJETO
+//ARRAY:
 const pessoaArray  = ["Dimitry", "Teixeira", 30]; //ARRAY - POSIÇÃO
-const pessoaObjeto = {nome: "Dimitry", sobrenome: "Teixeira", idade: 30}; //OBJETO - PROPRIEDADES
-
 pessoaArray[0]; //Carregando a posição 0 "Dimitry" do array "pessoaArray"
-pessoaObjeto.nome; //Carregando a propriedade "nome" do objeto "pessoaObjeto"
 console.log(pessoaArray[0]); //Exibindo posição 0 array
+//OBJETO:
+const pessoaObjeto = {nome: "Dimitry", sobrenome: "Teixeira", idade: 30}; //OBJETO - PROPRIEDADES
+pessoaObjeto.nome; //Carregando a propriedade "nome" do objeto "pessoaObjeto"
 console.log(pessoaObjeto.sobrenome); //Exibindo propriedade "sobrenome" do objeto
 
+//FORMAS DE TRAZER O TAMANHO DO ARRAY
 console.log(pessoaArray.length); //Chamando o método "length" da propriedade para de trazer o tamanho do array
 console.log(pessoaArray[pessoaArray.length -1]); //Trazendo sempre a última posição do array [tamanho do array -1]
 
