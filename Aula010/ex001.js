@@ -24,7 +24,7 @@ onkeydown -> Disparado quando um tecla é pressionada.
 onkeypress -> Disparado quando um tecla é pressionada e solta rapidamente.
 onkeyup -> Disparado quando uma tecla é solta sobre um elemento.
 
-
+#TELA:
 onload -> Disparado quando uma página terminou de ser carregada. Body.
 onresize -> Disparado quando há um redirecionamento da janela.
 */
@@ -87,4 +87,14 @@ function teclaPressionadaRapidamente(){ //onkeypress -> Disparado quando um tecl
 function teclaPressionadaESolta(){ //onkeyup -> Disparado quando uma tecla é solta sobre um elemento.
     let input5 = document.getElementById("campoTexto5").value;
     console.log(input5);
+}
+
+function aposCarregamentoDaPagina(){ //onload -> Disparado quando uma página terminou de ser carregada. Disparada no Body.
+                                     //Muito utilizado para carregar os processos mais pesados depois que a página foi aberta.
+                                     //Interessante carregar primeiro os processos mais leves e depois os mais pesados nesse evento
+    alert("Terminou de carregar a página");
+}
+
+function aposRedimensionarATela(){ //onresize -> Disparado quando há um redirecionamento da janela.
+    console.log("Houve um redimensionamento");
 }
