@@ -30,3 +30,20 @@ const lista2 = ["suco", "refrigerante", "carne"];
 const lista3 = ["salgadinhos"];
 const superLista = lista1.concat(lista2, lista3); //Concatenando duas listas. Precisa atribuir sobre um outra variavel.
 document.getElementById("campo2").innerHTML = superLista; //Exibindo resultado
+
+//MÉTODO: SLICE - Fatiar a matriz a partir de uma posição
+const jogadores = [
+    "Biro Biro", 
+    "Ribamar", 
+    "Pelé", 
+    "Maradona", 
+    "Neymar", 
+    "Cristiano Ronaldo", 
+    "Vampeta", 
+    "Dimitri"];
+const craques = jogadores.slice(2,6); //Fatiar array a partir da posição 2 até posição 6
+document.getElementById("campo3").innerHTML = craques;
+
+//MÉTODO: SORT - Ordenar array
+const ordemJogadores = jogadores.sort();
+document.getElementById("campo4").innerHTML = ordemJogadores;
