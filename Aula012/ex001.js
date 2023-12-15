@@ -1,11 +1,32 @@
 //JAVASCRIPT - MÉTODOS PARA ARRAYS
 const pessoa = ["Leandro", "Silveira", "Ramos", "Teixeira", 30, "Professor"]; //ARRAY
 
-pessoa.pop(); //MÉTODO: POP - Remove o ultimo item do array.
-pessoa.push("Altura: 1,90"); //MÉTODO: PUSH - Insere um valor ao final do array.
-pessoa.shift(); //MÉTODO: SHIFT - Remove o primeiro item do array (Leandro). Os indices são reordenados.
-pessoa.unshift("YRSSDFS"); //MÉTODO: UNSHIFT - Insere um valor no inicio do array. Os indices são reordenados.
-delete pessoa[2]; //MÉTODO: DELETE - Remove um valor da matriz. O índice continua fixo.
-                  //                //0        //1         //2         //3       //4  //5
+//MÉTODO: POP - Remove o ultimo item do array.
+pessoa.pop(); 
+
+//MÉTODO: PUSH - Insere um valor ao final do array.
+pessoa.push("Altura: 1,90"); 
+
+//MÉTODO: SHIFT - Remove o primeiro item do array (Leandro). Os indices são reordenados.
+pessoa.shift(); 
+
+//MÉTODO: UNSHIFT - Insere um valor no inicio do array. Os indices são reordenados.
+pessoa.unshift("ID da pessoa"); 
+
+//MÉTODO: DELETE - Remove um valor da matriz. O índice continua fixo.
+delete pessoa[2]; //                //0        //1         //2         //3       //4  //5
                   //const pessoa = ["Leandro", "Silveira", undefined, "Teixeira", 30, "Professor"]; 
-document.getElementById("teste").innerHTML = pessoa.join(" - "); //MÉTODO: JOIN - Insere uma valor entre o registro.
+
+//MÉTODO: SPLICE - Insere valores aonde quiser (POSIÇÃO, QUANTOS DESEJA REMOVER, QUANTOS DESEJA ADICIONAR)
+pessoa.splice(1,0,"Souza", "Santos"); 
+
+//MÉTODO: JOIN - Insere uma valor entre o registro.
+pessoa.join(" - ");
+document.getElementById("campo1").innerHTML = pessoa; //Exibindo resultado
+
+//MÉTODO: CONCAT - CONCATENA ARRAYS
+const lista1 = ["arroz", "feijão", "macarrão", "leite"];
+const lista2 = ["suco", "refrigerante", "carne"];
+const lista3 = ["salgadinhos"];
+const superLista = lista1.concat(lista2, lista3); //Concatenando duas listas. Precisa atribuir sobre um outra variavel.
+document.getElementById("campo2").innerHTML = superLista; //Exibindo resultado
