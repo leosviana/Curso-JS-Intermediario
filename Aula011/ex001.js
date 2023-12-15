@@ -1,4 +1,4 @@
-/* ARRAYS
+/* ARRAYS(MATRIZES)
 Os arrays JavaScript são usados para armazenar vários valores em uma única váriavel. 
 Diferente dos objetos, que funcionam com propriedades ou "nomes" que você dá para os itens
 dentro dele, os arrays não possuem propriedades. O item dentro dele é encontrado pela posição.
