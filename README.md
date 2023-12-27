@@ -5,4 +5,6 @@ CURSO: https://www.youtube.com/watch?v=rwJ2bwsjGhQ&list=PL2Fdisxwzt_d590u3uad46W
 Aula 008 - Concluída 11/12/23<br>
 Aula 009 - Concluída 11/12/23<br>
 Aula 010 - Concluída 14/12/23<br>
-Aula 011 - Iniciando..<br>
+Aula 011 - Concluída 15/12/23<br>
+Aula 012 - Concluída 15/12/23<br>
+Aula 013 - Iniciando...<br>
