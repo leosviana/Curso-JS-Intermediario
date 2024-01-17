@@ -1,6 +1,8 @@
 
 function verificaCor(){
-    let cor = document.getElementById("cor").value;
+    let cor = document.getElementById("cor").value; 
+    cor = cor.toLowerCase(); //Função do JS para converter todo texto em minúsculo
+    //Controle de entrada de valor. Muito utilizado para formatar um valor e comparar no "SWITCH"
 
     switch (cor){
         case "azul":
