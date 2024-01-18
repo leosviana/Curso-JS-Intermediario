@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT - EVENTOS DE TEMPO</title>
+
+    <style>
+        #textos{
+          text-align: center;
+        }
+        #botoes{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 10px;
+        }
+        #start{
+            background: green;
+            margin: 0 auto;
+            width: 100px;
+            height: 50px;
+            margin: 10px;   
+            border-radius: 10px;  
+            color: white;
+        }
+        #stop{
+            background: red;
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+            border-radius: 10px;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="textos">
+        <h2>JAVASCRIPT - EVENTOS DE TEMPO</h2>
+        <h3>CONTAGEM DE TEMPO</h3>
+        <p id="contagem">0</p>
+    </div>
+    <div id="botoes">
+        <div><button id="start" onclick="start()">Ativar contagem</button></div>
+        <div><button id="stop" onclick="stop()">Desativar contagem</button></div>
+    </div>
+
+    <script src="/Aula016/ex001.js"></script>
+</body>
+</html>
