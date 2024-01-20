@@ -6,18 +6,16 @@
     <title>JAVASCRIPT - EVENTOS DE TEMPO</title>
 
     <style>
-        #textos{
-          text-align: center;
-        }
+        body {
+            text-align: center;            
+        }        
         #botoes{
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 10px;
-        }
+        }       
         #start{
             background: green;
-            margin: 0 auto;
             width: 100px;
             height: 50px;
             margin: 10px;   
@@ -26,6 +24,14 @@
         }
         #stop{
             background: red;
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+            border-radius: 10px;
+            color: white;
+        }
+        #interval{
+            background: rgb(4, 127, 241);
             width: 100px;
             height: 50px;
             margin: 10px;
@@ -43,7 +49,11 @@
     </div>
     <div id="botoes">
         <div><button id="start" onclick="start()">Ativar contagem</button></div>
-        <div><button id="stop" onclick="stop()">Desativar contagem</button></div>
+        <div><button id="stop" onclick="stop()">Desativar contagem</button></div>        
+    </div>
+    <div>
+        <div><button id="interval" onclick="intervalo()">Intervalo</button></div>
+        <div><button id="interval" onclick="intervalo()">Intervalo</button></div>
     </div>
 
     <script src="/Aula016/ex001.js"></script>
