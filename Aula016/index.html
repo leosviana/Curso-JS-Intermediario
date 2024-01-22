@@ -18,7 +18,7 @@
             background: green;
             width: 100px;
             height: 50px;
-            margin: 10px;   
+            margin: 10px;
             border-radius: 10px;  
             color: white;
         }
@@ -30,8 +30,32 @@
             border-radius: 10px;
             color: white;
         }
-        #interval{
+        #start2{
             background: rgb(4, 127, 241);
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+            border-radius: 10px;
+            color: white;
+        }
+        #stop2{
+            background: red;
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+            border-radius: 10px;
+            color: white;
+        }
+        #start3{
+            background: rgb(241, 4, 209);
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+            border-radius: 10px;
+            color: white;
+        }
+        #stop3{
+            background: red;
             width: 100px;
             height: 50px;
             margin: 10px;
@@ -48,12 +72,16 @@
         <p id="contagem">0</p>
     </div>
     <div id="botoes">
-        <div><button id="start" onclick="start()">Ativar contagem</button></div>
-        <div><button id="stop" onclick="stop()">Desativar contagem</button></div>        
+        <button id="start" onclick="start()">Contagem simples</button>
+        <button id="stop" onclick="stop()">Pausar contagem</button>        
     </div>
-    <div>
-        <div><button id="start2" onclick="start2()">Ativar contagem 2</button></div>
-        <div><button id="stop2" onclick="stop2()">Desativar contagem 2</button></div>
+    <div id="botoes">
+        <button id="start2" onclick="start2()">Contagem progressiva</button>
+        <button id="stop2" onclick="stop2()">Pausar contagem</button>
+    </div>
+    <div id="botoes">
+        <button id="start3" onclick="start3()">Contagem regressiva</button>
+        <button id="stop3" onclick="stop3()">Pausar contagem</button>
     </div>
 
     <script src="/Aula016/ex001.js"></script>
