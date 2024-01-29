@@ -1,5 +1,5 @@
 
-// API - VIA CEP
+// MANIPULANDO API - VIA CEP
 //Acessando um site de forma remota
 // https://viacep.com.br/
 const ajax = new XMLHttpRequest(); //Capturando objeto de requisição 
