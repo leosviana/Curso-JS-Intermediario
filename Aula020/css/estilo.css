@@ -49,4 +49,41 @@ main{
     padding-top: 40px;
 }
 
-.item
+.item{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 0 20px #ccc;
+}
+
+.item-icone{
+    border: 1px solid orangered;
+    flex: 20%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.item-nome{
+    border: 1px solid deeppink;
+    flex: 55%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.item-botao{
+    border: 1px solid green;
+    flex: 25%;
+}
+
+.delete{
+    background: red;
+    color: white;
+    border: none;    
+    height: 30px;
+    width: 100%;
+    cursor: pointer;
+}
