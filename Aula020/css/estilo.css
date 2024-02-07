@@ -38,7 +38,7 @@ button.add{
     border: none; /* Retirando as bordas */
     height: 30px; /* Altura do botão */
     border-top-right-radius: 10px; /* Borda lateral de cima da direita arredondada */
-    border-bottom-right-radius: 10px; /* Borda lateral de baixo da direita arredondada */
+    border-bottom-right-radius: 10px; /* Borda lateral de baixo da direita arredondada */    
 }
 
 main{    
@@ -101,4 +101,8 @@ main{
 
 .mdi-check-circle{
     color: green; /* Colorindo de verde o botão de check das tarefas */
+}
+
+.mdi-plus-circle-outline{    
+    font-size: 20px;    
 }
