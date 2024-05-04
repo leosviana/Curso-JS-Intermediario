@@ -41,27 +41,31 @@ function ex5(){
 //Exercícios 6 - Exibe todos os elementos do array pela função forEach()
 function ex6(){
     const animais=["Cachorro", "Gato", "Periquito", "Tartaruga"];
-    let texto = "<ul>";
+    /*let texto = "<ul>";
     animais.forEach(minhaFuncao);
     texto += "</ul>";
-    documento.getElementById("resultado6").innerHTML = texto;
+    document.getElementById("resultado6").innerHTML = texto;
+    console.log(">>>" + texto);
 
     function minhaFuncao(value){
         texto += "<li>" + value + "</li>";
-    }
+    }*/
     
-    /*let texto;   
+    //let texto = "<ul>";
     document.getElementById("resultado6").innerHTML = 
-        animais.forEach(function minhaFuncao(value){
-            texto = value;
-        }
-    );*/
+        animais.forEach(function(valor){
+            //texto += "<li>" + valor + "</li>";
+            console.log(valor);
+            texto = valor;
+            //texto += "</ul>";
+        });
+        
 }
 
-
+//forEach
 /*numbers.forEach(function(number) {
     console.log(number);
 });
 
-//arrow function
+//forEach com arrow function
 numbers.forEach(number => console.log(number));*/
