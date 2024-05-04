@@ -38,34 +38,29 @@ function ex5(){
     lista += "</ul>";
 }
 
-//Exercícios 6 - Exibe todos os elementos do array pela função forEach()
+//Exercício 6 - Exibe todos os elementos do array pela função forEach()
 function ex6(){
     const animais=["Cachorro", "Gato", "Periquito", "Tartaruga"];
+    /* FOREACH 1 */
     /*let texto = "<ul>";
     animais.forEach(minhaFuncao);
     texto += "</ul>";
     document.getElementById("resultado6").innerHTML = texto;
-    console.log(">>>" + texto);
 
     function minhaFuncao(value){
         texto += "<li>" + value + "</li>";
     }*/
     
-    //let texto = "<ul>";
-    document.getElementById("resultado6").innerHTML = 
-        animais.forEach(function(valor){
-            //texto += "<li>" + valor + "</li>";
-            console.log(valor);
-            texto = valor;
-            //texto += "</ul>";
-        });
+    /* FOREACH 2 - SIMPLIFICADO */
+    /*let texto = "";
+    animais.forEach(function(valor){
+      texto += "<li>" + valor + "</li>";
+      texto += "</ul>";
+    });
+    document.getElementById("resultado6").innerHTML = texto;*/
+
+    /* FOREACH 3 - USANDO ARROW FUNCTION (FLECHA =>) */
+    let texto = "";
+    animais.forEach(animais => document.getElementById("resultado6").innerHTML += animais + " - ");
         
 }
-
-//forEach
-/*numbers.forEach(function(number) {
-    console.log(number);
-});
-
-//forEach com arrow function
-numbers.forEach(number => console.log(number));*/
