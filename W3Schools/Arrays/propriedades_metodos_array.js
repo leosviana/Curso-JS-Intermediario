@@ -41,3 +41,16 @@ function metodoPop(){
     resultado.innerHTML = animais;
 }
 //Resultado: Macaco,Leão,Elefante. (Removido "Hipopótamo")
+
+//CONCAT() - Une um ou mais arrays. Retorna um novo array contendo os arrays unidos.
+function metodoConcat(){
+    resultado = document.getElementById("resultado-concat");
+    const camisas = ["Manga Larga", "Cavada"];
+    const calcados = ["Sapatenis", "Botina", "Chinelo"];
+    let guardaRoupa = camisas.concat(calcados); //Está unindo o array "camisas" e "calcados"
+    resultado.innerHTML = guardaRoupa;
+}
+//Resultado: Manga Larga,Cavada,Sapatenis,Botina,Chinelo
+
+
+
