@@ -70,13 +70,36 @@ function metodoUnshift(){
 }
 //Resultado: Preto,Amarelo,Branco,Vermelho,Azul
 
-//SLICE() - Seleciona uma parte de um array e retorna o novo array.
+//SLICE() - Seleciona uma parte de um array e retorna o novo array (Inicio para o fim).
 function metodoSlice(){
     let resultado = document.getElementById("resultado-slice");
-    const pizza = ["queijo", "pepperoni", "vegetais", "azeitonas"];
-    let fatia = pizza.slice(1,3); //Será fatiado a pizza a partir do índice 1 (pepperoni) até o índice 2 (vegetais).    
+    const pizza = ["queijo", "pepperoni", "vegetais", "azeitonas", "Presunto", "Ovos"];
+    let fatia = pizza.slice(1,3); 
     resultado.innerHTML = fatia;
     //Isso vai imprimir ["pepperoni"], porque é a fatia que vai do segundo ingrediente (índice 1) 
     //até o terceiro ingrediente (índice 2), mas sem incluir o terceiro ingrediente.
 }
 //Resultado: pepperoni,vegetais
+
+//SLICE() - Seleciona uma parte de um array e retorna o novo array (Fim para o inicio).
+function metodoSliceReverso(){
+    let resultado = document.getElementById("resultado-slice-reverso");
+    const pizza = ["queijo", "pepperoni", "vegetais", "azeitonas", "presunto", "ovos", "orégano"];
+    let fatia = pizza.slice(-3,-1); 
+    resultado.innerHTML = fatia;
+    //A contagem se inicia pelo ultimo elemento até o primeiro.
+    //Será impresso a partir do terceiro elemento (índice [4]) até o primeiro elemento (índice [5])
+    //Mas sem incluir o primeiro ingrediente
+}
+//Resultado: presunto,ovos
+
+//SPLICE - Adiciona ou remove elementos do array. Substituindo o array original por outros elementos.
+function metodoSplice(){
+    let resultado = document.getElementById("resultado-splice");
+    let itens = ["poção de cura", "poção de magia", "armadura", "escudo"];
+    itens.splice(2,0,"espada", "sapatos");
+                 //itens.splice(índice, contagem(opcional), novos elementos(opcional))
+    //Adiciona dois elementos a partir do índice 2
+    resultado.innerHTML = itens;
+}
+//Resultado: poção de cura,poção de magia,espada,sapatos,armadura,escudo
