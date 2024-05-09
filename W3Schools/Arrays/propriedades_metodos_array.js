@@ -103,3 +103,14 @@ function metodoSplice(){
     resultado.innerHTML = itens;
 }
 //Resultado: poção de cura,poção de magia,espada,sapatos,armadura,escudo
+
+//MAP - Cria um novo array com o resultado de uma função executada em cada elemento do array. Esse método não altera o array original. Não executa a função para elementos vazios.
+function metodoMapEx1(){
+    resultado = document.getElementById("resultado-map-ex1");
+    let numeros = [1, 2, 3, 4, 5];
+    //Dobra o valor de cada número:
+    let valorDobrado = numeros.map(function(numero){
+        return numero * 2;
+    });
+    resultado.innerHTML = valorDobrado;
+}
