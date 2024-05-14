@@ -96,7 +96,7 @@ function metodoSliceReverso(){
 //SPLICE - Adiciona ou remove elementos do array. Substituindo o array original por outros elementos.
 function metodoSplice(){
     let resultado = document.getElementById("resultado-splice");
-    let itens = ["poção de cura", "poção de magia", "armadura", "escudo"];
+    const itens = ["poção de cura", "poção de magia", "armadura", "escudo"];
     itens.splice(2,0,"espada", "sapatos");
                  //itens.splice(índice, contagem(opcional), novos elementos(opcional))
     //Adiciona dois elementos a partir do índice 2
@@ -104,13 +104,38 @@ function metodoSplice(){
 }
 //Resultado: poção de cura,poção de magia,espada,sapatos,armadura,escudo
 
+//JOIN - Retorna um separador entre os elementos.
+function metodoJoin(){
+    const resultado = document.getElementById("resultado-join");
+    let vitamina = ["Banana", "Leite", "Morango"];    
+    
+    resultado.innerHTML = vitamina.join(" + "); //Insere um "+" entre os elementos.
+}
+
 //MAP - Cria um novo array com o resultado de uma função executada em cada elemento do array. Esse método não altera o array original. Não executa a função para elementos vazios.
+//Exemplo 1: Multiplica todos os elementos do array pelo número 2.
 function metodoMapEx1(){
     resultado = document.getElementById("resultado-map-ex1");
-    let numeros = [1, 2, 3, 4, 5];
+    const numeros = [1, 2, 3, 4, 5];
     //Dobra o valor de cada número:
     let valorDobrado = numeros.map(function(numero){
         return numero * 2;
     });
     resultado.innerHTML = valorDobrado;
+}
+
+//Exemplo 2: Retorna os elementos de um objeto separando-os com um espaço (" ").
+function metodoMapEx2(){
+    resultado = document.getElementById("resultado-map-ex2");
+    const pessoas = [
+        {nome:"Airton", sobrenome:"Senna"},
+        {nome:"Steve", sobrenome:"Jobs"},
+        {nome:"Elon", sobrenome:"Musk"}
+    ];
+
+    resultado.innerHTML = pessoas.map(pegarNomeCompleto); 
+
+    function pegarNomeCompleto(elementos){
+        return nomes = [elementos.nome, elementos.sobrenome].join(" "); //Retorna o objeto acrescentando um " "(espaço) entre os elementos
+    }
 }
