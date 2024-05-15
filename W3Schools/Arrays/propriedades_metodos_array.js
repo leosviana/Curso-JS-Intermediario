@@ -139,3 +139,15 @@ function metodoMapEx2(){
         return nomes = [elementos.nome, elementos.sobrenome].join(" "); //Retorna o objeto acrescentando um " "(espaço) entre os elementos
     }
 }
+
+//FILTER - O método filter() cria um novo array preenchido com elementos que passam em um teste fornecido por uma função. Não executa a função para elementos vazios. Não altera o array original.
+function metodoFilter(){
+    resultado = document.getElementById("resultado-filter");
+    const idade = [15, 16, 17, 18, 19, 20, 21];
+    const TirarHabilitacao = idade.filter(adulto);
+
+    function adulto(idade){
+        return idade >= 18;
+    }
+    resultado.innerHTML = TirarHabilitacao;
+}
