@@ -151,3 +151,31 @@ function metodoFilter(){
     }
     resultado.innerHTML = TirarHabilitacao;
 }
+
+//REDUCE - Reduz os valores de um array para um único valor (da esquerda para a direita).
+function metodoReduceEx1(){
+    resultado = document.getElementById("resultado-reduce1");
+    let numeros = [175, 50, 25];
+    
+    resultado.innerHTML = numeros.reduce(funcaoReduzir);
+
+    function funcaoReduzir(total, num){
+        return total - num;
+    }
+}
+
+//REDUCE - Soma todos os valores do array e arredonda no final.
+function metodoReduceEx2(){
+    resultado = document.getElementById("resultado-reduce2");
+    let numeros = [15.5, 2.3, 1.1, 4.7];
+
+    resultado.innerHTML = numeros.reduce(fazerArredondamentoESoma, 0);
+
+    function fazerArredondamentoESoma(total, num){
+        return total + Math.round(num);
+    }
+}
+
+
+
+
