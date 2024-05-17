@@ -17,7 +17,7 @@ Aula 019 - JSON - Concluída 29/12/23<br>
 Aula 020 - Projeto Lista de Tarefas (TODOLIST) - Concluida 07/02/24<br>
 
 CURSO W3SCHOOLS: https://www.w3schools.com/js
-ARRAYS - Andamento...
+ARRAYS - Concluído 16/05/24
 
 REFERÊNCIAS:<br>
 https://pictogrammers.com/library/mdi/<br>
